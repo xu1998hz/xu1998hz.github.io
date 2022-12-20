@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Wenda Xu</title>
+  
+  <meta name="author" content="Wenda Xu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Wenda Xu</name>
+              </p>
+              <p>I am a third year PhD student at <a href="http://nlp.cs.ucsb.edu">UCSB NLP group </a>, co-advised by Prof. William Wang and Prof. Lei Li. I obtained my B.S in Computer Science at University of California at Davis.
+                (Email: <a href="wendaxu@ucsb.edu">wendaxu@ucsb.edu</a>)
+              </p>
+              <heading>Research Interests</heading>
+              <p>
+                My major research interests lie in the area of text generation and text generation evaluation. In the past, I worked on self-supervised techniques to achieve constraiend text generation.
+                Currently, I actively work on the text generation evaluation. I am the first author of SEScore (<strong>Best Unsupervised Text Generation metric at WMT22 shared task</strong>). I am also interested 
+                in the metric-guided text generation and adopt diffusion models to do open-ended text generation.
+              </p>
+              <p style="text-align:center">
+                <a href="data/wendaxu_cv.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/WendaXu-bio.txt">Bio</a> &nbsp/&nbsp
+                <a href="https://scholar.google.co.il/citations?user=hUh7qCcAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/WendaXu2">Twitter</a> &nbsp/&nbsp
+                <a href="https://github.com/xu1998hz/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/wenda.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/wenda.jpeg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publications</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/SEScore_v2_teaser.pdf' width="190" height="120">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2212.09305">
+                <papertitle>SEScore2: Retrieval Augmented Pretraining for Text Generation Evaluation</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Xian Qian, Mingxuan Wang, Lei Li, William Yang Wang
+              <br>
+              On Submission
+              <br> 
+              <a href="https://github.com/xu1998hz/SEScore2">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2212.09305">arXiv</a>
+        /
+              <a href="https://github.com/xu1998hz/SEScore2">code</a>
+              <p></p>
+              <p>Use a retrieval augmented data synthesis technique to pretrain a learn evaluation metric (generate million synthetic texts in 10 mins). Use knowledge distilation from LM with TLM and MLM objectives to perform severity estimations. 
+                It outperforms SEScore in four text generation tasks with three languages (<strong>The overall kendall correlation improves 14.3%</strong>). 
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/SEScore.png' width="180" height="120">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2210.05035">
+                <papertitle>Not All Errors are Equal: Learning Text Generation Metrics using Stratified Error Synthesis</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Yi-lin Tuan, Yujie Lu, Michael Saxon, Lei Li, William Yang Wang
+              <br>
+        EMNLP2022, <em>WMT22 shared metric task</em> <font color="red"><strong>(Best unsupervised metric)</strong></font>
+              <br>
+              <a href="https://github.com/xu1998hz/SEScore">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2210.05035">arXiv</a>
+        /
+              <a href="https://github.com/xu1998hz/SEScore">code</a>
+        /
+              <a href="https://huggingface.co/spaces/xu1998hz/sescore">HuggingFace</a>
+              <p></p>
+              <p><strong>SEScore</strong> is a reference-based text-generation evaluation metric that requires no pre-human-annotated error data. It develops a novel stratified error synthesis 
+                to synthesize diverse errors with varying severity levels. Its effectiveness over prior methods like BLEU, BERTScore, COMET and BLEURT has been demonstrated on various NLG tasks. 
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/expert_layman.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2110.02950">
+                <papertitle>Self-Supervised Knowledge Assimilation for Expert-Layman Text Style Transfer</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Michael Saxon, Misha Sra, William Yang Wang
+              <br>
+              AAAI2022
+              <br>
+              <a href="https://github.com/xu1998hz/SSL_KBA_Expert_Layman_Style_Transfer">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2110.02950">arXiv</a>
+        /
+              <a href="https://github.com/xu1998hz/SSL_KBA_Expert_Layman_Style_Transfer">code</a>
+        
+              <!-- <p></p> -->
+              <br>
+              <strong>Thanks to my girlfriend Jeselle-Ann Laxa for initiating this project!</strong>
+              <p> We develop a self-supervised approach to perform expert layman text style transfer. We propose a novel
+                SSL task knowledge base assimilation to inject knowledge into pretraining. We achieve amazing performance 
+                in human evaluation.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/peco.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2112.09237">
+                <papertitle>PECO: Examining Single Sentence Label Leakage in Natural Language Inference Datasets through Progressive Evaluation of Cluster Outliers</papertitle>
+              </a>
+              <br>
+              Michael Saxon, Xinyi Wang, <strong>Wenda Xu</strong>, William Yang Wang
+              <br>
+              On Submission
+              <br>
+              <a href="https://arxiv.org/abs/2112.09237">arXiv</a>
+        /
+              <a href="https://github.com/michaelsaxon/DatasetAnalysis">code</a>
+        
+              <!-- <p></p> -->
+              
+              <p> We demonstrated automated detection of spurious, annotator-driven correlations that lead to cheating features in NLI. 
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/causal.png' width="180" height="100">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2206.02928">
+                <papertitle>Neuro-Symbolic Procedural Planning with Commonsense Prompting</papertitle>
+              </a>
+              <br>
+              Yujie Lu, Weixi Feng, Wanrong Zhu, <strong>Wenda Xu</strong>, Xin Eric Wang, Miguel Eckstein, William Yang Wang
+              <br>
+              On Submission
+              <br>
+              <a href="https://arxiv.org/abs/2206.02928">arXiv</a>
+        /
+              <a href="">code</a>
+        
+              <p></p>
+              <br>
+              <br>
+              <p> 
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/imagine.png' width="180" height="120">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2210.03765">
+                <papertitle>Visualize Before You Write: Imagination-Guided Open-Ended Text Generation</papertitle>
+              </a>
+              <br>
+              Wanrong Zhu, An Yan, Yujie Lu, <strong>Wenda Xu</strong>, Xin Eric Wang, Miguel Eckstein, William Yang Wang
+              <br>
+              On Submission
+              <br>
+              <a href="https://arxiv.org/abs/2210.03765">arXiv</a>
+        /
+              <a href="https://github.com/VegB/iNLG">code</a>
+        
+              <p></p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p> 
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/vln_visual.png' width="160" height="120">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2209.04725">
+                <papertitle>Anticipating the Unseen Discrepancy for Vision and Language Navigation</papertitle>
+              </a>
+              <br>
+              Yujie Lu, Huiliang Zhang, Ping Nie, Weixi Feng, <strong>Wenda Xu</strong>, Xin Eric Wang, William Yang Wang
+              <br>
+              On Submission
+              <br>
+              <a href="https://arxiv.org/abs/2209.04725">arXiv</a>
+        /
+              <a href="">code</a>
+        
+              <p></p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p> 
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/brainseg.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9766171/authors">
+                <papertitle>BrainSec: Automated Brain Tissue Segmentation Pipeline for Scalable Neuropathological Analysis</papertitle>
+              </a>
+              <br>
+              Zhengfeng Lai, Luca Cerny Oliveira, Runlin Guo, <strong>Wenda Xu</strong>, Zin Hu, Kelsey Mifflin, Charles Decarli, Sen-Ching Cheung, Chen-Nee Chuah, Brittany N Dugger
+              <br>
+              IEEE Access 
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9766171/authors">arXiv</a>
+        /
+              <a href="https://github.com/KolinGuo/BrainSeg">code</a>
+        
+              <p></p>
+              <br>
+              <br>
+              <br>
+              
+              <p> 
+              </p>
+            </td>
+          </tr>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
