@@ -20,14 +20,14 @@
               <p style="text-align:center">
                 <name>Wenda Xu</name>
               </p>
-              <p>I am a third year PhD student at <a href="http://nlp.cs.ucsb.edu">UCSB NLP group </a>, co-advised by Prof. William Wang and Prof. Lei Li. I obtained my B.S in Computer Science at University of California at Davis.
+              <p>I am a forth year PhD student at <a href="http://nlp.cs.ucsb.edu">UCSB NLP group </a>, co-advised by Prof. William Wang and Prof. Lei Li. I obtained my B.S in Computer Science at University of California at Davis.
                 (Email: <a href="wendaxu@ucsb.edu">wendaxu@ucsb.edu</a>)
               </p>
               <heading>Research Interests</heading>
               <p>
-                My major research interests lie in the area of text generation and text generation evaluation. In the past, I worked on self-supervised techniques to achieve constraiend text generation.
-                Currently, I actively work on the text generation evaluation. I am the first author of SEScore (<strong>Best Unsupervised Text Generation metric at WMT22 shared task</strong>). I am also interested 
-                in the metric-guided text generation and adopt diffusion models to do open-ended text generation.
+                My major research interests lie in the area of text generation evaluation and large language model (LLM) alignment. In one sentence, I want to design methods to enable LLM learn to generate actionable feedback (both in the form of quality score or natural language diagnostic report) and use actionable feedback to align LLM with human principles.<br><br>
+                Currently, I actively work on the text generation evaluation (both in quality and interpretability). I am the first author of SEScore1&2 and InstructScore (<strong>Best Unsupervised Text Generation metrics at WMT22 shared task</strong>). I am interested 
+                in the fine-grained feedback guided text generation and extend this generic pipeline into multimodality content generation.
               </p>
               <p style="text-align:center">
                 <a href="data/wendaxu_cv.pdf">CV</a> &nbsp/&nbsp
@@ -45,11 +45,51 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
+              <heading>First author Publications</heading>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/SA_LLM.png' width="180" height="180">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2212.09305">
+                <papertitle>Pinpoint, Not Criticize: Refining Large Language Models via Fine-Grained Actionable Feedback</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Daniel Deutsch, Mara Finkelstein, Juraj Juraska, Biao Zhang, Zhongtao Liu, William Yang Wang, Lei Li, Markus Freitag
+              <br>
+              Preprint
+              <br> 
+              <a href="https://arxiv.org/pdf/2311.09336.pdf">project page</a>
+        /
+              <a href="https://arxiv.org/pdf/2311.09336.pdf">arXiv</a>
+        /
+              <a href="https://arxiv.org/pdf/2311.09336.pdf">code</a>
+              <p></p>
+              <p>Can we not criticize LLM but pinpoint errors it makes and automatically guide it with fine-grained actionable feedback? Can we formulate iterative refinement into a local search problem, simulated annealing? This is the work after my prior work InstructScore, where I really think about how to incorporate fine-grained actionable feedback to guide text generation. InstructScore not only offers quality judgements but actionable feedback to improve LLM!
+              </p>
+            </td>
+          </tr> 
 
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -58,7 +98,47 @@
                 <source src="images/regnerf_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/SEScore_v2_teaser.pdf' width="190" height="120">
+                <img src='images/instructscore.png' width="190" height="160">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2212.09305">
+                <papertitle>INSTRUCTSCORE: Explainable Text Generation Evaluation with Finegrained Feedback</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Danqing Wang, Liangming Pan, Zhenqiao Song, Markus Freitag, William Yang Wang, Lei Li
+              <br>
+              EMNLP Main 2023 (<font color="red"><strong>Oral</strong></font>)
+              <br> 
+              <a href="https://github.com/xu1998hz/SEScore3">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2305.14282">arXiv</a>
+        /
+              <a href="https://github.com/xu1998hz/SEScore3">code</a>
+              <p></p>
+              <p>InstructScore is an explainable text generation metric, which instead of outputing a scalar score, it outputs error location, error type and severity measures to candidate text. It achieves high correlation to human on four text generation tasks: Translation, table-to-text, captioning and commonsense generation and generalizes to unseen text generation task: keyword-to-text. </strong> 
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/sescore2_teaser.png' width="190" height="120">
               </div>
               <script type="text/javascript">
                 function regnerf_start() {
@@ -78,7 +158,7 @@
               <br>
               <strong>Wenda Xu</strong>, Xian Qian, Mingxuan Wang, Lei Li, William Yang Wang
               <br>
-              On Submission
+              ACL Main 2023
               <br> 
               <a href="https://github.com/xu1998hz/SEScore2">project page</a>
         /
@@ -179,7 +259,56 @@
               </p>
             </td>
           </tr> 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Collaboration Publications</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/self-correct.png' width="190" height="120">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2212.10515.pdf">
+                <papertitle>Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies</papertitle>
+              </a>
+              <br>
+              Liangming Pan, Michael Saxon, <strong>Wenda Xu</strong>, Deepak Nathani, Xinyi Wang, William Yang Wang
+              <br>
+              Preprint
+              <br>
+              <a href="https://arxiv.org/pdf/2308.03188.pdf">arXiv</a>
+        /
+              <a href="https://github.com/teacherpeterpan/self-correction-llm-papers">code</a>
+        
+              <!-- <p></p> -->
+              
+              <p> A survey of self-correct strategies of LLM, including training-time, generation-time and inference-time approaches.
+              </p>
+            </td>
+          </tr> 
+
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -207,7 +336,7 @@
               <br>
               Yi-Lin Tuan, Alon Albalak, <strong>Wenda Xu</strong>, Michael Saxon, Connor Pryor, Lise Getoor, William Yang Wang
               <br>
-              On Submission
+              ACL 2023
               <br>
               <a href="https://arxiv.org/pdf/2212.10515.pdf">arXiv</a>
         /
