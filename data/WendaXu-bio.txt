@@ -1,5 +1,10 @@
 At UC Davis, I was fortunately advised by Prof. Chen-Nee Chuah and had worked on several self-driving and medical image 
 related projects with her, such as path finding, visual SLAM and image segementation. I received best senior design 
 of a year (Visual SLAM using ORB-SLAM2 with Path Finding). Our automatic white/grey matter image segementation technique 
-was accepted by IEEE access. I was fortunate to be co-advised by Prof. William Wang and Prof. Lei Li during PhD. 
-They opened a new world for me in NLP!
+was accepted by IEEE access. 
+
+I was fortunate to be co-advised by Prof. William Wang and Prof. Lei Li during PhD.  They opened a new world for me in NLP! 
+At UC Santa Barbara, I worked on constrained text generation (Expert layman text style transfer), text generation evaluation 
+(SEScore, SEScore2 and InstructScore). Now I worked on LLM alignment via reward model or fine-grained feedback (LLMMend). My 
+next step is to build a new evaluation paradigm to estimate LLM's particular capacity. I will focus on extending metric/fine-grained
+feedback guided generation into mulilingual and multimodal settings.
