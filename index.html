@@ -57,6 +57,46 @@
                 <source src="images/regnerf_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
+                <img src='images/peril_self_refine.png' width="180" height="180">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2311.09336">
+                <papertitle>Perils of Self-Feedback: Self-Bias Amplifies in Large Language Models</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Guanglei Zhu, Xuandong Zhao, Liangming Pan, Lei Li, William Yang Wang
+              <br>
+              Preprint
+              <br> 
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">project page</a>
+        /
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">arXiv</a>
+        /
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">code</a>
+              <p></p>
+              <p>Self-feedback display model's bias towards their own outputs. We find that self-bias is prevalent in all examined LLMs across multiple languages and tasks. To mitigate such biases, we discover that larger mode size and external feedback with accurate assessment can significantly reduce bias in the self-refine pipeline, leading to actual performance improvement in downstream tasks.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
                 <img src='images/SA_LLM.png' width="180" height="180">
               </div>
               <script type="text/javascript">
