@@ -72,6 +72,48 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/pdf/2402.11436.pdf">
+                <papertitle>BPO: Supercharging Online Preference Learning by Adhering to the Proximity of Behavior LLM</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu*</strong>, Jiachen Li*, William Yang Wang, Lei Li
+              <br>
+              *Two authors contributed equally
+              <br>
+              Preprint
+              <br> 
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">project page</a>
+        /
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">arXiv</a>
+        /
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">code</a>
+              <p></p>
+              <p>Online DPO: our 1) We collect data in the on-policy/online fashion 2) we respect behavior LLM when constructing trust region. 3) With only two phrase of online data collection, we can significantly improve offline DPO. With same data collection frequency, we can significantly improve online DPO.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/peril_self_refine.png' width="180" height="180">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">
                 <papertitle>Perils of Self-Feedback: Self-Bias Amplifies in Large Language Models</papertitle>
               </a>
               <br>
