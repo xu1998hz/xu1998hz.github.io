@@ -41,15 +41,25 @@
             </td>
           </tr>
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>First author Publications</heading>
+              <h1>First author Publications</h1>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><em>Aligning LLM with reward/metric feedback (Training time)</em></heading>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -72,7 +82,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/pdf/2406.12168">
-                <papertitle>BPO: Supercharging Online Preference Learning by Adhering to the Proximity of Behavior LLM</papertitle>
+                <papertitle>BPO: Supercharging Online Preference Learning by Adhering to the Proximity of Behavior LLM (Training time alignment)</papertitle>
               </a>
               <br>
               <strong>Wenda Xu*</strong>, Jiachen Li*, William Yang Wang, Lei Li
@@ -92,6 +102,15 @@
             </td>
           </tr> 
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><em>Data augmentation to align LLM</em></heading>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -99,7 +118,7 @@
                 <source src="images/regnerf_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/peril_self_refine.png' width="180" height="180">
+                <img src='images/expert_layman.png' width="180">
               </div>
               <script type="text/javascript">
                 function regnerf_start() {
@@ -112,25 +131,39 @@
                 regnerf_stop()
               </script>
             </td>
+
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2402.11436.pdf">
-                <papertitle>Pride and Prejudice: LLM Amplifies Self-Bias in Self-Refinement</papertitle>
+              <a href="https://arxiv.org/abs/2110.02950">
+                <papertitle>Self-Supervised Knowledge Assimilation for Expert-Layman Text Style Transfer</papertitle>
               </a>
               <br>
-              <strong>Wenda Xu</strong>, Guanglei Zhu, Xuandong Zhao, Liangming Pan, Lei Li, William Yang Wang
+              <strong>Wenda Xu</strong>, Michael Saxon, Misha Sra, William Yang Wang
               <br>
-              ACL 2024 Main
-              <br> 
-              <a href="https://arxiv.org/pdf/2402.11436.pdf">project page</a>
+              AAAI2022
+              <br>
+              <a href="https://github.com/xu1998hz/SSL_KBA_Expert_Layman_Style_Transfer">project page</a>
         /
-              <a href="https://arxiv.org/pdf/2402.11436.pdf">arXiv</a>
+              <a href="https://arxiv.org/abs/2110.02950">arXiv</a>
         /
-              <a href="https://arxiv.org/pdf/2402.11436.pdf">code</a>
-              <p></p>
-              <p>Self-feedback display model's bias towards their own outputs. We find that self-bias is prevalent in all examined LLMs across multiple languages and tasks (6 LLMs, 4 languages, 3 tasks). To mitigate such biases, we discover that larger mode size and external feedback with accurate assessment can significantly reduce bias in the self-refine pipeline, leading to actual performance improvement in downstream tasks.
+              <a href="https://github.com/xu1998hz/SSL_KBA_Expert_Layman_Style_Transfer">code</a>
+        
+              <br>
+              <strong>Thanks to my girlfriend Jeselle-Ann Laxa for initiating this project!</strong>
+              <p> We develop a self-supervised approach to perform expert layman text style transfer. We propose a novel
+                SSL task knowledge base assimilation to inject knowledge into pretraining. We achieve amazing performance 
+                in human evaluation.
               </p>
             </td>
           </tr> 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><em>Using fine-grained feedback to align large language model (Inference time)</em></heading>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
 
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -154,7 +187,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2311.09336">
-                <papertitle>LLMRefine: Pinpointing and Refining Large Language Models via Fine-Grained Actionable Feedback</papertitle>
+                <papertitle>LLMRefine: Pinpointing and Refining Large Language Models via Fine-Grained Actionable Feedback (Inference time alignment)</papertitle>
               </a>
               <br>
               <strong>Wenda Xu</strong>, Daniel Deutsch, Mara Finkelstein, Juraj Juraska, Biao Zhang, Zhongtao Liu, William Yang Wang, Lei Li, Markus Freitag
@@ -171,6 +204,66 @@
               </p>
             </td>
           </tr> 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><em>Pitfalls of LLM’s self-quality assessment</em></heading>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/peril_self_refine.png' width="180" height="180">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">
+                <papertitle>Pride and Prejudice: LLM Amplifies Self-Bias in Self-Refinement (Analysis of Self-refine's bias)</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Guanglei Zhu, Xuandong Zhao, Liangming Pan, Lei Li, William Yang Wang
+              <br>
+              ACL 2024 Main
+              <br> 
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">project page</a>
+        /
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">arXiv</a>
+        /
+              <a href="https://arxiv.org/pdf/2402.11436.pdf">code</a>
+              <p></p>
+              <p>Self-feedback display model's bias towards their own outputs. We find that self-bias is prevalent in all examined LLMs across multiple languages and tasks (6 LLMs, 4 languages, 3 tasks). To mitigate such biases, we discover that larger mode size and external feedback with accurate assessment can significantly reduce bias in the self-refine pipeline, leading to actual performance improvement in downstream tasks.
+              </p>
+            </td>
+          </tr> 
+
+          
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><em>Learning explainable and fine-grained quality feedback</em></heading>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
 
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -194,7 +287,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2305.14282">
-                <papertitle>INSTRUCTSCORE: Explainable Text Generation Evaluation with Finegrained Feedback</papertitle>
+                <papertitle>INSTRUCTSCORE: Explainable Text Generation Evaluation with Finegrained Feedback (diagnostic-report style of quality metric)</papertitle>
               </a>
               <br>
               <strong>Wenda Xu</strong>, Danqing Wang, Liangming Pan, Zhenqiao Song, Markus Freitag, William Yang Wang, Lei Li
@@ -211,6 +304,15 @@
               </p>
             </td>
           </tr> 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><em>Learning to evaluate the quality of generated text without labels</em></heading>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
 
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -234,7 +336,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2212.09305">
-                <papertitle>SEScore2: Retrieval Augmented Pretraining for Text Generation Evaluation</papertitle>
+                <papertitle>SEScore2: Retrieval Augmented Pretraining for Text Generation Evaluation (Unsupervised quality metric)</papertitle>
               </a>
               <br>
               <strong>Wenda Xu</strong>, Xian Qian, Mingxuan Wang, Lei Li, William Yang Wang
@@ -275,7 +377,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2210.05035">
-                <papertitle>Not All Errors are Equal: Learning Text Generation Metrics using Stratified Error Synthesis</papertitle>
+                <papertitle>Not All Errors are Equal: Learning Text Generation Metrics using Stratified Error Synthesis (Unsupervised quality metric)</papertitle>
               </a>
               <br>
               <strong>Wenda Xu</strong>, Yi-lin Tuan, Yujie Lu, Michael Saxon, Lei Li, William Yang Wang
@@ -296,58 +398,15 @@
             </td>
           </tr> 
 
-          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/regnerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/expert_layman.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function regnerf_start() {
-                  document.getElementById('regnerf_image').style.opacity = "1";
-                }
-
-                function regnerf_stop() {
-                  document.getElementById('regnerf_image').style.opacity = "0";
-                }
-                regnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2110.02950">
-                <papertitle>Self-Supervised Knowledge Assimilation for Expert-Layman Text Style Transfer</papertitle>
-              </a>
-              <br>
-              <strong>Wenda Xu</strong>, Michael Saxon, Misha Sra, William Yang Wang
-              <br>
-              AAAI2022
-              <br>
-              <a href="https://github.com/xu1998hz/SSL_KBA_Expert_Layman_Style_Transfer">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2110.02950">arXiv</a>
-        /
-              <a href="https://github.com/xu1998hz/SSL_KBA_Expert_Layman_Style_Transfer">code</a>
-        
-              <!-- <p></p> -->
-              <br>
-              <!-- <strong>Thanks to my girlfriend Jeselle-Ann Laxa for initiating this project!</strong> -->
-              <p> We develop a self-supervised approach to perform expert layman text style transfer. We propose a novel
-                SSL task knowledge base assimilation to inject knowledge into pretraining. We achieve amazing performance 
-                in human evaluation.
-              </p>
-            </td>
-          </tr> 
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Collaboration Publications</heading>
+              <h1>Collaboration Publications</h1>
             </td>
-          </tr>
-        </tbody></table>
+            </tr>
+          </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
