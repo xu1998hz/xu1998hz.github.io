@@ -97,7 +97,7 @@
         /
               <a href="https://arxiv.org/pdf/2402.11436.pdf">code</a>
               <p></p>
-              <p>Online BPO: our 1) We collect data in the on-policy/online fashion 2) we respect behavior LLM when constructing trust region. 3) With only two phrase of online data collection, we can significantly improve offline DPO. With same data collection frequency, we can significantly improve online DPO.
+              <p>Online BPO: our 1) We collect data in the on-policy/online fashion 2) we respect behavior LLM when constructing trust region. 3) With only two phrase of online data collection, we can significantly improve offline DPO (<strong>TL;DR (72.0%->89.5%), Helpfulness (82.2%->93.5%), Harmfulness (77.5%->97.7%)</strong>).
               </p>
             </td>
           </tr> 
@@ -151,7 +151,7 @@
               <strong>Thanks to my girlfriend Jeselle-Ann Laxa for initiating this project!</strong>
               <p> We develop a self-supervised approach to perform expert layman text style transfer. We propose a novel
                 SSL task knowledge base assimilation to inject knowledge into pretraining. We achieve amazing performance 
-                in human evaluation.
+                in human evaluation, <strong>relative improving overall success rate by 106%!</strong>.
               </p>
             </td>
           </tr> 
@@ -200,7 +200,7 @@
         /
               <a href="https://arxiv.org/pdf/2311.09336.pdf">code</a>
               <p></p>
-              <p>Can we not criticize LLM but pinpoint errors it makes and automatically guide it with fine-grained actionable feedback? Can we formulate iterative refinement into a local search problem, simulated annealing? This is the work after my prior work InstructScore, where I really think about how to incorporate fine-grained actionable feedback to guide text generation. InstructScore not only offers quality judgements but actionable feedback to improve LLM!
+              <p>Can we not criticize LLM but pinpoint errors it makes and automatically guide it with fine-grained actionable feedback? Can we formulate iterative refinement into a local search problem, simulated annealing? This is the work after my prior work InstructScore, where I really think about how to incorporate fine-grained actionable feedback to guide text generation. InstructScore not only offers quality judgements but actionable feedback to guide LLM, <strong>improving 1.7 MetricX points on translation tasks, 8.1 ROUGE-L on ASQA, 2.2 ROUGE-L on topical summarization</strong>.
               </p>
             </td>
           </tr> 
@@ -300,7 +300,7 @@
         /
               <a href="https://github.com/xu1998hz/SEScore3">code</a>
               <p></p>
-              <p>InstructScore is an explainable text generation metric, which instead of outputing a scalar score, it outputs error location, error type and severity measures to candidate text. It achieves high correlation to human on four text generation tasks: Translation, table-to-text, captioning and commonsense generation and generalizes to unseen text generation task: keyword-to-text. </strong> 
+              <p>InstructScore is an explainable text generation metric, which instead of outputing a scalar score, it outputs error location, error type and severity measures to candidate text. <strong>Our 7B model surpasses all other unsupervised metrics, including those based on 175B GPT-3 and GPT-4.</strong>
               </p>
             </td>
           </tr> 
@@ -392,7 +392,7 @@
         /
               <a href="https://huggingface.co/spaces/xu1998hz/sescore">HuggingFace</a>
               <p></p>
-              <p><strong>SEScore</strong> is a reference-based text-generation evaluation metric that requires no pre-human-annotated data to train on. We develop a novel stratified error synthesis to synthesize diverse errors with varying severity levels at raw data. Then, we learn a neural metric to automatically give ratings to model generated texts. Its effectiveness over prior methods like BLEU, BERTScore, COMET and BLEURT has been demonstrated on various NLG tasks.
+              <p><strong>SEScore</strong> is a reference-based text-generation evaluation metric that requires no pre-human-annotated data to train on. We develop a novel stratified error synthesis to synthesize diverse errors with varying severity levels at raw data. Then, we learn a neural metric to automatically give ratings to model generated texts. <strong>Its effectiveness over prior methods like BLEU, BERTScore, COMET and BLEURT has been demonstrated on various NLG tasks.</strong> 
               </p>
             </td>
           </tr> 
