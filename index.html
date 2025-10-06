@@ -20,21 +20,21 @@
               <p style="text-align:center">
                 <name>Wenda Xu (许闻达)</name>
               </p>
-              <p>I received PhD in Computer Science from the <a href="http://nlp.cs.ucsb.edu">University of California Santa Barbara</a>. I am a research scientist at <a href="https://www.google.com/">Google</a> (Email: <a href="wendaxu@ucsb.edu">wendaxu@ucsb.edu</a>, <a href="wendax@google.com">wendax@google.com</a>).
-              </p>
-              
-              <heading>My dissertation</heading>
-              <p></p>
-              <a href="https://escholarship.org/uc/item/4q1931gr">On Evaluation and Efficient Post-training for LLMs</a> 
-              <p></p>
-              My advisors are <a href="https://sites.cs.ucsb.edu/~william/">Prof. William Wang</a> and <a href="http://www.cs.cmu.edu/~leili/">Prof. Lei Li</a>.
+              <p>I am a research scientist at <a href="https://www.google.com/">Google</a> (Email: <a href="wendaxu@ucsb.edu">wendaxu@ucsb.edu</a>, <a href="wendax@google.com">wendax@google.com</a>).
               </p>
 
               <heading>Research Interests</heading>
               <p>
-                My research interests lie in the area of <strong>large language model (LLM) evaluation and efficient post-training</strong>. 
-                I am the first author of <a href="https://github.com/xu1998hz/SEScore2">SEScore1&2</a> and <a href="https://github.com/xu1998hz/InstructScore_SEScore3">InstructScore</a> (<strong>Best Unsupervised Text Generation metrics at WMT22 shared task</strong>). Currently, I am actively working on LLM post-training techniques, in both preference learning and knowledge distillation.
+                My research focuses on improving large language models (LLMs) through rigorous evaluation and efficient post-training. I actively develop automated methods to assess model capabilities, including scalable and efficient data curation technique for building model-specific challenge benchmarks. To complement this, I design unsupervised and explainable evaluation metrics. My work in this area led to SEScore1&2 and InstructScore, which was recognized as the best unsupervised metric at the WMT22 shared task. My background also includes developing efficient post-training techniques, from preference learning with BPO to knowledge distillation with Speculative KD.
               </p>
+
+              <heading>My dissertation</heading>
+              <p></p>
+              <a href="https://escholarship.org/uc/item/4q1931gr">On Evaluation and Efficient Post-training for LLMs</a> 
+              <p></p>
+              I received PhD in Computer Science from the <a href="http://nlp.cs.ucsb.edu">University of California Santa Barbara</a>.  My advisors are <a href="https://sites.cs.ucsb.edu/~william/">Prof. William Wang</a> and <a href="http://www.cs.cmu.edu/~leili/">Prof. Lei Li</a>.
+              </p>
+
               <p style="text-align:center">
                 <a href="data/wendaxu_cv.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/wenda-xu-866040163/">Linkedin</a> &nbsp/&nbsp
@@ -48,11 +48,48 @@
             </td>
           </tr>
         </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <h1><font color="red">News</font></h1>
+              On 4/15/2025, I joined Google as a research scientist, working on Gemini evaluation and efficient post-training.
+              <br><br>
+              On 3/7/2025, I successfuly defended my PhD and submit my thesis (<a href="https://escholarship.org/uc/item/4q1931gr">On Evaluation and Efficient Post-training for LLMs</a>).
+              <br><br>
+              <a href="https://arxiv.org/abs/2410.11325">Speculative knowledge distillation</a>  was accepted by ICLR2025!
+        </tr></tbody></table>
+        
+
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:75%;vertical-align:middle">
               <h1>Industry Experience</h1>
+              <h2><em>Google Translate Research</em></h2>
+              <strong>Position: </strong>Research Scientist
+              <br>
+              <strong>Duration: </strong>04/2025 - Now
+              <br>
+              <strong>Publication: </strong><a href="https://arxiv.org/abs/2509.26619">
+                <papertitle>Searching for Difficult-to-Translate Test Examples at Scale</papertitle>
+              </a>
+              <br>
+              <strong>Publication: </strong><a href="https://arxiv.org/abs/2509.26600">
+                <papertitle>Deconstructing Self-Bias in LLM-generated Translation Benchmarks</papertitle>
+              </a>
+              <br>
+              <strong>Publication: </strong><a href="https://arxiv.org/abs/2509.26592">
+                <papertitle>Generating Difficult-to-Translate Texts</papertitle>
+              </a>
+              <br>
+              <br>
+              - Developed and scaled an automated pipeline to generate dynamic challenge sets for evaluating Gemini models across both pre-training and post-training stages.
+              <br>
+              - Led the research efforts in automatic benchmark construction using LLMs, studying both self-bias in LLM-generated benchmark and efficient auto-challenge set construction. 
+              <br>
+              - Led the research efforts in studying length bias of translation evaluation metric (On submission publication).
+              
               <h2><em>Google Cloud AI Research</em></h2>
               <strong>Duration: </strong>06/2024 - 10/2024
               <br>
@@ -63,6 +100,9 @@
               <strong>Publication: </strong><a href="https://arxiv.org/abs/2410.11325">
                 <papertitle>Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling</papertitle>
               </a>
+              <br>
+              <br>
+              - Built a generic KD framework that generalizes to on-policy and supervised KD, achieves substantial gains in task specific and task agnostic knowledge distillation (now deployed in production at Google Translate).  
 
               <h2><em>Google Translate Research</em></h2>
               <strong>Duration: </strong>06/2023 - 12/2023
@@ -74,6 +114,9 @@
               <strong>Publication: </strong><a href="https://arxiv.org/abs/2311.09336">
                 <papertitle>LLMRefine: Pinpointing and Refining Large Language Models via Fine-Grained Actionable Feedback</papertitle>
               </a>
+              <br>
+              <br>
+              - Developed an efficient, inference-time optimization technique that iteratively refines PaLM 2 outputs at the span level, which has been successfully deployed in production by the YouTube team.
 
               <h2><em>ByteDance AI Lab</em></h2>
               <strong>Duration: </strong>06/2022 - 10/2022
@@ -85,6 +128,9 @@
               <strong>Publication: </strong><a href="https://arxiv.org/abs/2212.09305">
                 <papertitle>SESCORE2: Learning Text Generation Evaluation via Synthesizing Realistic Mistakes</papertitle>
               </a>
+              <br>
+              <br>
+              - Developed a learned evaluation metric without human labels that achieved high correlation with human judgment and greatly improves the assessment of translation quality.
             </td>
           </tr></tbody></table>
 
@@ -101,7 +147,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading><em>Aligning student LLM to teacher LLM (Post-training stage)</em></heading>
+              <heading><em>Bridging the performance gap between student and teacher LLM (Post-training stage)</em></heading>
             </td>
             </tr>
           </tbody></table>
@@ -142,8 +188,7 @@
           /
                 <a href="https://arxiv.org/abs/2410.11325">code</a>
                 <p></p>
-                <p>We use Interleaved sampling that utilizes on-policy student model samples likely to be generated by the teacher, mitigating the issues of low-quality samples in on-policy KD and dynamically switching
-                  between supervised and on-policy KD. Our experiments consistently show SKD's superiority in both task-specific and task-agnostic distillations. SKD is robust to various model families, initialization, and dataset sizes. 
+                <p>A generic KD framework that generalizes to on-policy and supervised KD, achieves substantial gains in task specific and task agnostic knowledge distillation.
                 </p>
               </td>
             </tr> 
@@ -164,7 +209,7 @@
                 <source src="images/regnerf_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/BPO.png' width="180" height="180">
+                <img src='images/BPO.png' width="180" height="140">
               </div>
               <script type="text/javascript">
                 function regnerf_start() {
@@ -194,7 +239,7 @@
         /
               <a href="https://arxiv.org/abs/2406.12168">code</a>
               <p></p>
-              <p>Online BPO: our 1) We collect data in the on-policy/online fashion 2) we respect behavior LLM when constructing trust region. 3) With only two phrase of online data collection, we can significantly improve offline DPO (<strong>TL;DR (72.0%->89.5%), Helpfulness (82.2%->93.5%), Harmfulness (77.5%->97.7%)</strong>).
+              <p>On-policy BPO achieves superior performance compared to DPO on TL;DR (89.5% vs 72.0%), Helpfulness (93.5% vs 82.2%), and Harmfulness (97.7% vs 77.5%).
               </p>
             </td>
           </tr> 
@@ -246,9 +291,7 @@
         
               <br>
               <!-- <strong>Thanks to my girlfriend Jeselle-Ann Laxa for initiating this project!</strong> -->
-              <p> We develop a self-supervised approach to perform expert layman text style transfer. We propose a novel
-                SSL task knowledge base assimilation to inject knowledge into pretraining. We achieve amazing performance 
-                in human evaluation, <strong>relative improving overall success rate by 106%!</strong>
+              <p> We develop a novel self-supervised approach to perform expert layman text style transfer, relative improvement in overall success rate at text style transfer by 106%.
               </p>
             </td>
           </tr> 
@@ -256,7 +299,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading><em>Using fine-grained LLM agent to align large language model (Inference stage)</em></heading>
+              <heading><em>Using fine-grained autorater to refine large language model (Inference stage)</em></heading>
             </td>
             </tr>
           </tbody></table>
@@ -269,7 +312,7 @@
                 <source src="images/regnerf_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/SA_LLM.png' width="180" height="180">
+                <img src='images/SA_LLM.png' width="180" height="160">
               </div>
               <script type="text/javascript">
                 function regnerf_start() {
@@ -297,7 +340,46 @@
         /
               <a href="https://arxiv.org/pdf/2311.09336.pdf">code</a>
               <p></p>
-              <p>Can we not criticize LLM but pinpoint errors it makes and automatically guide it with fine-grained actionable feedback? Can we formulate iterative refinement into a local search problem, simulated annealing? This is the work after my prior work InstructScore, where I really think about how to incorporate fine-grained actionable feedback to guide text generation. <strong>Fine-grained LLM agent iteratively improves PALM2 for 1.7 MetricX points on translation tasks, 8.1 ROUGE-L on ASQA, 2.2 ROUGE-L on topical summarization</strong>.
+              <p>              
+                An efficient inference time optimization technique that iteratively refines the outputs of the PaLM 2 model at text span-level, achieving improvements of 1.7 MetricX on translation, 8.1 ROUGE-L on ASQA, and 2.2 ROUGE-L on topical summarization.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/self-correct.png' width="190" height="120">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://aclanthology.org/2024.tacl-1.27/">
+                <papertitle>Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies</papertitle>
+              </a>
+              <br>
+              Liangming Pan, Michael Saxon, <strong>Wenda Xu</strong>, Deepak Nathani, Xinyi Wang, William Yang Wang
+              <br>
+              TACL 2024
+              <br>
+              <a href="https://arxiv.org/pdf/2308.03188.pdf">arXiv</a>
+        /
+              <a href="https://github.com/teacherpeterpan/self-correction-llm-papers">code</a>
+              
+              <p> A survey of self-correct strategies of LLM, including training-time, generation-time and inference-time approaches.
               </p>
             </td>
           </tr> 
@@ -310,7 +392,100 @@
           </tr>
         </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><em>Automatic benchmark construction for LLMs</em></heading>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>  
+
+        <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/seach_diff.png' width="180" height="140">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2402.11436">
+                <papertitle>Searching for Difficult-to-Translate Test Examples at Scale</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu*</strong>, Vilém Zouhar*, Parker Riley, Mara Finkelstein, Markus Freitag, Daniel Deutsch
+              <br>
+              *Two authors contributed equally
+              <br>
+              Preprint
+              <br> 
+              <a href="https://arxiv.org/pdf/2509.26619">project page</a>
+        /
+              <a href="https://arxiv.org/pdf/2509.26619">arXiv</a>
+        /
+              <a href="https://arxiv.org/pdf/2509.26619">code</a>
+              <p></p>
+              <p>
+                A scalable and efficient automatic data curation technique for building model-specific challenge benchmarks by finding the most difficult test examples.sea
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/gen_diff.png' width="180" height="120">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2402.11436">
+                <papertitle>Generating Difficult-to-Translate Texts</papertitle>
+              </a>
+              <br>
+              Vilém Zouhar, <strong>Wenda Xu*</strong>, Parker Riley, Juraj Juraska, Mara Finkelstein, Markus Freitag, Daniel Deutsch
+              <br>
+              Preprint
+              <br> 
+              <a href="https://arxiv.org/abs/2509.26592">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2509.26592">arXiv</a>
+        /
+              <a href="https://arxiv.org/abs/2509.26592">code</a>
+              <p></p>
+              <p>
+                MT-breaker, employs a LLM to iteratively generate difficult yet natural prompt examples to build more challenging translation benchmarks.
+              </p>
+            </td>
+          </tr>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading><em>Pitfalls of LLM’s self-quality assessment</em></heading>
@@ -326,7 +501,47 @@
                 <source src="images/regnerf_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/peril_self_refine.png' width="180" height="180">
+                <img src='images/self-bias_benchmark.png' width="180" height="140">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2402.11436">
+                <papertitle>Deconstructing Self-Bias in LLM-generated Translation Benchmarks</papertitle>
+              </a>
+              <br>
+              <strong>Wenda Xu</strong>, Sweta Agrawal, Vilém Zouhar, Markus Freitag, Daniel Deutsch
+              <br>
+              Preprint
+              <br> 
+              <a href="https://arxiv.org/abs/2509.26600">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2509.26600">arXiv</a>
+        /
+              <a href="https://arxiv.org/abs/2509.26600">code</a>
+              <p></p>
+              <p>We demonstrate that LLM-generated benchmarks exhibit a systematic self-bias that inflates a model's own performance, and low source text diversity is one primary cause.</strong>
+              </p>
+            </td>
+          </tr>
+          
+            <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/peril_self_refine.png' width="180" height="140">
               </div>
               <script type="text/javascript">
                 function regnerf_start() {
@@ -354,8 +569,7 @@
         /
               <a href="https://arxiv.org/pdf/2402.11436.pdf">code</a>
               <p></p>
-              <p>Self-feedback display model's bias towards their own outputs. We find that self-bias is prevalent in all examined LLMs across multiple languages and tasks (6 LLMs, 4 languages, 3 tasks). To mitigate such biases, we discover that larger mode size and external feedback with accurate assessment can significantly reduce bias in the self-refine pipeline, leading to actual performance improvement in downstream tasks. <strong>First define and quantify
-                LLM’s self-bias towards its own outputs.</strong>
+              <p>The study to define and quantify the bias exhibited by LLMs when assessing their own generated outputs.
               </p>
             </td>
           </tr> 
@@ -378,7 +592,7 @@
                 <source src="images/regnerf_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
-                <img src='images/instructscore.png' width="190" height="160">
+                <img src='images/instructscore.png' width="190" height="140">
               </div>
               <script type="text/javascript">
                 function regnerf_start() {
@@ -406,8 +620,45 @@
         /
               <a href="https://github.com/xu1998hz/SEScore3">code</a>
               <p></p>
-              <p>InstructScore is an explainable text generation metric, which instead of outputing a scalar score, it outputs error location, error type and severity measures to candidate text. <strong>Fine-grained 7B LLM evaluator surpasses all other unsupervised metrics,
-                including those based on 175B GPT-3 and GPT-4.</strong>
+              <p>A fine-grained 7B LLM autorater (detect errors at span level), trained on synthetic data, surpasses unsupervised metrics, including those based on 175B GPT-3 and GPT-4.
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/submit-workflow.png' width="190" height="100">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2410.10861">
+                <papertitle>Translation Canvas: An Explainable Interface to Pinpoint and Analyze Translation Systems</papertitle>
+              </a>
+              <br>
+              Chinmay Dandekar, <strong>Wenda Xu</strong>, Xi Xu, Siqi Ouyang, Lei Li
+              <br>
+              EMNLP 2024 Demo
+              <br>
+              <a href="https://arxiv.org/abs/2410.10861">arXiv</a>
+        /
+              <a href="https://pypi.org/project/translation-canvas/">code</a>
+              
+              <p>System demonstration of InstructScore. 
               </p>
             </td>
           </tr> 
@@ -456,8 +707,7 @@
         /
               <a href="https://github.com/xu1998hz/SEScore2">code</a>
               <p></p>
-              <p>SESCORE2, is a SSL method to train a metric for general text generation tasks without human ratings. We develop a technique to synthesize candidate sentences with varying levels of mistakes for training. To make these self-constructed samples realistic, we introduce retrieval augmented synthesis on anchor text; 
-                It outperforms SEScore in four text generation tasks with three languages (<strong>The overall kendall correlation improves 14.3%</strong>). 
+              <p>SESCORE2, is a SSL method to train a metric for general text generation tasks without human ratings, kendall correlation improved 14.3% from SEScore. 
               </p>
             </td>
           </tr> 
@@ -499,8 +749,7 @@
         /
               <a href="https://huggingface.co/spaces/xu1998hz/sescore">HuggingFace</a>
               <p></p>
-              <p><strong>SEScore</strong> is a reference-based text-generation evaluation metric that requires no pre-human-annotated data to train on. We develop a novel stratified error synthesis to synthesize diverse errors with varying severity levels at raw data. Then, we learn a neural metric to automatically give ratings to model generated texts. <strong>Its effectiveness over prior methods like BLEU, BERTScore, COMET and BLEURT has been demonstrated on various NLG tasks.</strong> 
-              </p>
+              <p><strong>SEScore</strong> is a reference-based text-generation evaluation metric that requires no pre-human-annotated data to train on. We develop a novel stratified error synthesis to synthesize diverse errors with varying severity levels at raw data. 
             </td>
           </tr> 
 
@@ -508,7 +757,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <h1>Selected Collaboration Publications</h1>
+              <h1>Collaboration Publications</h1>
             </td>
             </tr>
           </tbody></table>
@@ -549,7 +798,7 @@
               <a href="https://arxiv.org/abs/2410.16011">code</a>
               
               
-              <p> There has been a longstanding belief that current metrics yield unrealistically high latency measurements in unsegmented streaming settings. In this paper, we investigate this phenomenon, revealing its root cause in a fundamental misconception underlying existing latency evaluation approaches.
+              <p> We reveal the root problems of exisitng latency evaluations at speech translation.
               </p>
             </td>
           </tr> 
@@ -588,89 +837,12 @@
               <a href="https://arxiv.org/pdf/2410.06965">code</a>
               
               
-              <p> We introduce PROFILE (PRObing Factors of InfLuence for Explainability), a novel framework that uncovers and quantifies the influence of specific factors driving preferences. 
-                PROFILE's factor level analysis explains the ``why'' behind human-model alignment and misalignment, offering insights into the direction of model improvement.
+              <p> A novel framework that uncovers and quantifies the influence of specific factors driving preferences, exposing the gap of model's understanding and generation capability. 
               </p>
             </td>
           </tr> 
 
-          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/regnerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/submit-workflow.png' width="190" height="120">
-              </div>
-              <script type="text/javascript">
-                function regnerf_start() {
-                  document.getElementById('regnerf_image').style.opacity = "1";
-                }
-
-                function regnerf_stop() {
-                  document.getElementById('regnerf_image').style.opacity = "0";
-                }
-                regnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2410.10861">
-                <papertitle>Translation Canvas: An Explainable Interface to Pinpoint and Analyze Translation Systems</papertitle>
-              </a>
-              <br>
-              Chinmay Dandekar, <strong>Wenda Xu</strong>, Xi Xu, Siqi Ouyang, Lei Li
-              <br>
-              EMNLP 2024 Demo
-              <br>
-              <a href="https://arxiv.org/abs/2410.10861">arXiv</a>
-        /
-              <a href="https://pypi.org/project/translation-canvas/">code</a>
-              
-              <p> We build an interactive transaltion canvas to visualize InstructScore, highlighting
-                error spans with explanations and selectively displaying systems' predictions. Translation Canvas assists machine trans
-                lation researchers in comprehending system-level model performance by identifying common errors (their frequency and severity). 
-              </p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/regnerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/self-correct.png' width="190" height="120">
-              </div>
-              <script type="text/javascript">
-                function regnerf_start() {
-                  document.getElementById('regnerf_image').style.opacity = "1";
-                }
-
-                function regnerf_stop() {
-                  document.getElementById('regnerf_image').style.opacity = "0";
-                }
-                regnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://aclanthology.org/2024.tacl-1.27/">
-                <papertitle>Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies</papertitle>
-              </a>
-              <br>
-              Liangming Pan, Michael Saxon, <strong>Wenda Xu</strong>, Deepak Nathani, Xinyi Wang, William Yang Wang
-              <br>
-              TACL 2024
-              <br>
-              <a href="https://arxiv.org/pdf/2308.03188.pdf">arXiv</a>
-        /
-              <a href="https://github.com/teacherpeterpan/self-correction-llm-papers">code</a>
-              
-              <p> A survey of self-correct strategies of LLM, including training-time, generation-time and inference-time approaches.
-              </p>
-            </td>
-          </tr> 
+          
 
           <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
